@@ -27,5 +27,10 @@ body {
 }
 
 .carousel-item {
-    height: 36rem;
+    height: 40rem;
+}
+
+.carousel-item img {
+    display: block;
+    
 }
