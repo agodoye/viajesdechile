@@ -26,11 +26,11 @@ body {
     opacity: 1;
 }
 
-.carousel-item {
-    height: 40rem;
-}
-
 .carousel-item img {
     display: block;
     
+}
+
+#quienesSomos {
+    background-color: black;
 }
