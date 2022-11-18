@@ -28,9 +28,26 @@ body {
 
 .carousel-item img {
     display: block;
-    
 }
 
-#quienesSomos {
+#quienesSomos, #destacados {
     background-color: black;
 }
+
+.card-img-top {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+.card {
+    max-height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        opacity: 1;
+    }
+  }
