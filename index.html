@@ -93,7 +93,7 @@
 
   <!-- QUIÉNES SOMOS -->
   <section id="quienesSomos">
-    <div class="container py-5">
+    <div class="container py-5 d-none d-md-block">
       <h2 class="text-light text-uppercase pb-4 mb-0">Quiénes Somos</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col px-4 text-white fw-lighter">
@@ -129,8 +129,8 @@
   </section>
 
   <!-- DESTACADOS -->
-  <section id="destacados" class="pb-5">
-    <div class="container pb-5">
+  <section id="destacados">
+    <div class="container py-5">
       <h2 class="text-light text-uppercase pb-4 mb-0">Destacados</h2>
       <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
         <div class="px-2">
@@ -172,19 +172,28 @@
       </div>
     </div>
   </section>
-
+  
+  <!-- CONTACTO -->
   <section id="contacto">
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="container py-5 text-start text-white">
+      <h2 class="text-light text-uppercase pb-4 mb-0 text-center">Contacto</h2>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@dominio.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Consulta">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-info text-white">Enviar</button>
     </div>
   </section>
 
-  <footer>
+  <footer class="py-5 bg-info">
 
   </footer>
 

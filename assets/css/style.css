@@ -46,6 +46,10 @@ body {
     max-height: fit-content;
 }
 
+#contacto {
+    background-color: black;
+}
+
 @media (max-width: 768px) {
     .nav-link {
         opacity: 1;
