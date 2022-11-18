@@ -97,8 +97,15 @@
       <h2 class="text-light text-uppercase pb-4 mb-0">Quiénes Somos</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col px-4 text-white fw-lighter">
-          <div class="icono bg-info py-1 mb-3"><i class="fa-sharp fa-solid fa-plane"></i></div>
-          <p class="text-start">
+          <div
+            id="icono1"
+            class="icono py-1 mb-3"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"data-bs-custom-class="custom-tooltip"
+            data-bs-title="Presiona para ocultar información de vuelos">
+            <i class="fa-sharp fa-solid fa-plane"></i>
+          </div>
+          <p id="ocultar1" class="text-start">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, odio natus! Ipsam
             distinctio porro, labore minima harum reiciendis, velit eum officia nihil asperiores corrupti quae. Optio
             illo quae recusandae. Consequuntur, ea corporis maiores minima accusamus soluta quas quis aperiam blanditiis
@@ -106,17 +113,33 @@
             Fugiat quam distinctio maiores ad?</p>
         </div>
         <div class="col px-4 text-white fw-lighter">
-          <p class="text-start">
+          <p id="ocultar2" class="text-start mb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, odio natus! Ipsam
             distinctio porro, labore minima harum reiciendis, velit eum officia nihil asperiores corrupti quae. Optio
             illo quae recusandae. Consequuntur, ea corporis maiores minima accusamus soluta quas quis aperiam blanditiis
             eligendi fuga ipsam laborum distinctio iure aut rem odio? Aliquam ducimus repellat dolorem quod nihil.
             Fugiat quam distinctio maiores ad?</p>
-          <div class="icono bg-info py-1 mt-3"><i class="fa-sharp fa-solid fa-plane"></i></div>
+          <div 
+            id="icono2"
+            class="icono py-1"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Presiona para ocultar información de alpinismo">
+            <i class="fa-solid fa-mountain"></i>
+          </div>
         </div>
         <div class="col px-4 text-white fw-lighter">
-          <div class="icono bg-info py-1 mb-3"><i class="fa-sharp fa-solid fa-plane"></i></div>
-          <p class="text-start">
+          <div
+            id="icono3"
+            class="icono py-1 mb-3"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Presiona para ocultar información de rutas">
+            <i class="fa-solid fa-route"></i>
+          </div>
+          <p id="ocultar3" class="text-start">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, odio natus! Ipsam
             distinctio porro, labore minima harum reiciendis, velit eum officia nihil asperiores corrupti quae. Optio
             illo quae recusandae. Consequuntur, ea corporis maiores minima accusamus soluta quas quis aperiam blanditiis
@@ -135,7 +158,30 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <div class="px-2">
           <div class="col card p-0 text-start">
-            <img src="assets/img/card1.jpg" class="card-img-top" alt="paisaje 1">
+            <img
+              src="assets/img/card1.jpg"
+              class="card-img-top"
+              alt="paisaje 1"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal1">
+            <!-- MODAL IMAGEN CARD 1 -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/card1.jpg" alt="paisaje 1" width="100%">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card-body bg-info text-white">
               <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit amet</h3>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores modi aut quam beatae ipsa quae, consequatur vitae esse. Corporis optio dolorum fuga libero, accusamus aspernatur, repellendus ratione reprehenderit animi ab fugit rerum provident temporibus veritatis, sapiente quod ducimus adipisci nulla.</p>
@@ -144,7 +190,30 @@
         </div>
         <div class="px-2">
           <div class="col card p-0 text-start">
-            <img src="assets/img/card2.jpg" class="card-img-top" alt="paisaje 2">
+            <img
+              src="assets/img/card2.jpg"
+              class="card-img-top"
+              alt="paisaje 2"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2">
+            <!-- MODAL IMAGEN CARD 2 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Lorem ipsum dolor sit amet aque quibusdam</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/card2.jpg" alt="paisaje 2" width="100%">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card-body bg-info text-white">
               <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit amet aque quibusdam</h3>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad qui culpa quas iure eligendi quasi, reprehenderit consequatur, eaque quibusdam explicabo minima quidem laudantium velit? Nulla dolore magni sed! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
@@ -153,7 +222,30 @@
         </div>
         <div class="px-2">
           <div class="col card p-0 text-start">
-            <img src="assets/img/card3.jpg" class="card-img-top" alt="paisaje 3">
+            <img
+              src="assets/img/card3.jpg"
+              class="card-img-top"
+              alt="paisaje 3"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal3">
+            <!-- MODAL IMAGEN CARD 3 -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Lorem ipsum dolor sit amet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/card3.jpg" alt="paisaje 3" width="100%">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card-body bg-info text-white">
               <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit amet</h3>
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt amet suscipit dignissimos omnis tenetur quisquam, quae repellendus soluta nostrum cupiditate facere laborum dolorem qui. Saepe voluptates magni, maxime voluptate eius minus sunt aliquid quidem natus?</p>
@@ -162,7 +254,30 @@
         </div>
         <div class="px-2">
           <div class="col card p-0 text-start">
-            <img src="assets/img/card4.jpg" class="card-img-top" alt="paisaje 4">
+            <img
+              src="assets/img/card4.jpg"
+              class="card-img-top"
+              alt="paisaje 4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal4">
+            <!-- MODAL IMAGEN CARD 4 -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bolder fs-3" id="exampleModalLabel">Lorem ipsum dolor sit amet aque quibusdam</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/card4.jpg" alt="paisaje 4" width="100%">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="card-body bg-info text-white">
               <h3 class="fs-5 fw-bolder">Lorem ipsum dolor sit amet aque quibusdam</h3>
               <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod fugit perspiciatis magni, ratione nemo enim voluptates blanditiis dolorem. Repellendus voluptate repudiandae totam tenetur iure deleniti doloremque, laborum animi earum quos quis at!</p>
@@ -189,10 +304,11 @@
         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
-      <button type="submit" class="btn btn-info text-white">Enviar</button>
+      <button id="enviar" type="submit" class="btn btn-info text-white">Enviar</button>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="py-5 bg-info">
     <div class="container">
       <div class="row row-cols-1  row-cols-md-2 text-white">
