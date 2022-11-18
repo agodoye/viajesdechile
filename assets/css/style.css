@@ -8,6 +8,16 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+    color: white;
+}
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -50,8 +60,41 @@ body {
     background-color: black;
 }
 
+footer .container {
+    width: 60vw!important;
+}
+
+footer ul {
+    float: right;
+}
+
+footer ul li {
+    list-style: none;
+}
+
 @media (max-width: 768px) {
     .nav-link {
         opacity: 1;
+    }
+
+    footer ul {
+        float: none;
+        font-size: 3rem;
+        padding: 0;
+        justify-content:center;
+    }
+    footer .container .row .col {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer ul li {
+        display: flex;
+        flex-direction: row;
+        width: fit-content!important;
+    }
+
+    #footer1 {
+        text-align: center!important;
     }
   }
